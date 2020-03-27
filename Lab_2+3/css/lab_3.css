@@ -1,0 +1,115 @@
+body
+ {
+ 	padding: 0px;
+ 	margin: 0px auto;
+ 	width: 1320px;
+ 	background: #666;
+ }
+nav
+{
+	width: 960px;
+	margin: 0px auto;
+
+}
+nav:before{
+	content: '';
+	display: block;
+	height: 50px;
+	width: 100%;
+	background: black;
+	position: absolute;
+	z-index: -1;
+
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	height: 50px;
+}
+ul li
+{
+	float: left;
+}
+ul li a
+{
+	color: #fff;
+	display: block;
+	height: 50px;	
+	padding: 0 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+ul li a:hover
+{
+	background:#d34d43;
+}
+
+ table {
+    width: 60%; /* Ширина таблицы */
+    background: white; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+    margin: 0px auto;
+    margin-top: 10px;
+   }
+   td, th {
+    background: maroon; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+
+ #info_aboutme
+ {
+ 	width: 720px;
+ 	background: #58ACFA;
+ 	margin: 0px auto;
+ 	border: 2px solid blue;
+ 	height: 380px;
+ 	border-radius: 10px;
+ 	font-family: Times New Roman
+    
+
+  }
+.icon
+{
+	width: 20px;
+	height: 20px;
+}
+.video
+	{
+	width: 800px;
+	margin: 0px auto;
+	background: #CEFDFF;
+	}
+.subscribe
+	{
+	margin-top:25px;
+	}
+
+.ph
+	{  	
+  	float: right;
+  	border: 7px solid #A9E2F3;
+  	border-radius: 100px;				 
+	box-shadow: 0 0 7px #666;
+  }
+  .my_info
+  {
+  	background: #81F7F3;
+  	margin-top:10px;
+  }
+  .Copyright
+  {
+ 	 color:#A4A4A4;
+ 	 position: fixed; 
+		 left: 0; bottom: 0;
+  }
+  .contact
+  {
+  	width: 300px;
+  	background: #A9F5BC;
+  	left: 0;
+  	bottom: 0
+  }
