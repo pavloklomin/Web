@@ -1,0 +1,13 @@
+#triangle-down {
+margin:auto;
+margin-top: 75px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid rgb(236, 32, 32);
+  transition: ease 1.5s;
+}
+#triangle-down:hover { /*Animation*/
+    transform: scale(2);
+  }

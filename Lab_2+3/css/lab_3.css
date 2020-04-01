@@ -1,5 +1,6 @@
 body
  {
+
  	padding: 0px;
  	margin: 0px auto;
  	width: 1320px;
@@ -68,8 +69,9 @@ ul li a:hover
  	border: 2px solid blue;
  	height: 380px;
  	border-radius: 10px;
- 	font-family: Times New Roman
-    
+ 	font-family: Times New Roman;
+    box-sizing: border-box;
+
 
   }
 .icon
@@ -89,16 +91,26 @@ ul li a:hover
 	}
 
 .ph
-	{  	
+	{ 
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 350px;
+	height: 350px; 	
   	float: right;
-  	border: 7px solid #A9E2F3;
-  	border-radius: 100px;				 
+  	border: 7px solid black;
+  	border-radius: 50px;				 
 	box-shadow: 0 0 7px #666;
   }
   .my_info
   {
+  	padding-left: 5px;
   	background: #81F7F3;
   	margin-top:10px;
+  }
+  .my_info a{
+  text-decoration: none;
+  font-size: 25px;
+
   }
   .Copyright
   {

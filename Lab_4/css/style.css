@@ -1,0 +1,91 @@
+body{
+	background: #1ca0dd;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: Arial,Tahoma,sans-serif,;
+}
+div,p,input,button,form{
+	box-sizing: border-box;
+}
+/*			НИЖНЯЯ ПАНЕЛЬ			*/
+.Copyright
+{
+	color:#A4A4A4;
+	position: fixed; 
+	   left: 0; bottom: 0;
+}
+nav
+{
+	width: 960px;
+	margin: 0px auto;
+
+}
+nav:before{
+	content: '';
+	display: block;
+	height: 50px;
+	width: 100%;
+	background: rgb(12, 34, 94);
+	position: absolute;
+	z-index: -1;
+
+}
+nav ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	height: 50px;
+}
+nav ul li
+{
+	float: left;
+}
+nav ul li a
+{
+	color: #fff;
+	display: block;
+	height: 50px;	
+	padding: 0 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+nav ul li a:hover
+{
+	background:#d34d43;
+}
+
+
+a{
+	color: #4ca8ed;
+	text-decoration: none;
+}
+h1{
+text-align: center;
+}
+/*		 ОСНОВНОЙ КОНТЕТ БЛОК			*/
+#content-block{
+	background: white;
+
+	padding: 2% 10%;
+	margin: 30px 10% 20px 10%; 
+
+	font-size: 150%;
+}
+.button-menu{
+	background: #eee;
+	outline: 2px solid #bdddf4; 
+	outline-offset: -2px;
+
+	margin-top: 20px;
+	padding: 15px;
+
+	text-align: center;
+	font-size: 200%;
+}
+.button-menu:hover{   	/*	Анимация наведения	*/
+	background-color: #fff;
+	color: #000;  
+}

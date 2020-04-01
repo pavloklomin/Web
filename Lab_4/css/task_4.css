@@ -1,0 +1,19 @@
+#square {
+    width: 200px;
+    height: 200px;    
+    margin:auto;
+    margin-top: 50px;
+    background: red;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  #square:hover{
+    animation: color_changer 0.75s infinite;
+  }
+@keyframes color_changer{
+    from { background:rgb(148, 49, 230); }   
+  6% { background:rgb(221, 96, 24);}
+  50%{ background:rgb(169, 243, 32); }
+  94%{ background:rgb(37, 212, 198); }
+  to { background:rgb(19, 33, 228); } 
+
+}
