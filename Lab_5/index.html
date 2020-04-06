@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Лабораторна робота 5</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<section id="task-1">
+		<div id="Name">
+			<h2>Name</h2>
+			<input type="text" value="Pavlo" onchange="MyName = this.value">
+		</div >
+		<div id="Surname">
+			<h2>Surname</h2>
+			<input type="text" value="Klomin" onchange="MySurname = this.value">
+		</div>
+		<div id="Gander">
+			<h2>Gander</h2>
+			<input type="radio" id="male" name="gender" onclick="male = true" checked>
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender"onclick="male = false">
+			<label for="female">Female</label>
+		</div>
+		<div id="birthday">
+			<div id="TEST">
+				<h2>Your birthday</h2>
+				<input  value="2001-03-01" onchange="date_birth=this.value" min="1000-01-01" max="2020-12-31">
+			</div>
+		</div>
+		<div class="output">
+			<button onclick="output_fiscal_code()">Output fiscal code</button>
+			<h2>Fiscal code is: </h2>
+			<output id = "fiscal_output"></output>
+		</div>
+		
+	</section>
+
+
+
+	<section id="task-2">
+		<h2>Числа Харшад</h2>
+		<input id="harsh_value" type="text" value="1017" >
+		<div class="output">
+			<button onclick="harshad()">Is harshad?</button>
+			<output id = "harshad_output"></output>
+	</div>
+		
+	</section>
+	<section id='task-3'>
+		
+		<input type="text" id="rugInput" value= "['a','b','b','a'],['b','b','b','b'],['a','b','b','a']"/>
+		<button onclick="Rug_function()" >Result</button>
+		<div class="output">
+			<h2>Your rug is:</h2>
+			<output id="rugRes">........</output>
+		</div>
+	</section>
+</body>
+</html>

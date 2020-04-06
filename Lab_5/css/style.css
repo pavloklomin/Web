@@ -1,0 +1,40 @@
+body{
+	background: #1ca0dd;
+	height: 100%;
+	width: 70%;
+	margin: 0px auto;
+	font-family: Arial,Tahoma,sans-serif,;
+}
+#task-1{
+  padding-bottom: 50px;
+}
+#output{
+  padding-top: 20px;
+}
+.clearfix:after{
+  content: "";
+  display: table;
+  width: 100%;
+}
+#day{
+  float: left;
+}
+#month{
+  float: left;
+}
+#year{
+  float: left;
+}
+button{
+  width: 300px;
+  height: 45px; 
+  margin-top: 20px;
+}
+output{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 26px;
+}
+#rugInput{
+  width: 250px;
+  height: 50px;
+}
