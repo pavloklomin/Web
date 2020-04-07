@@ -1,14 +1,14 @@
 MyName='Pavlo';
 MySurname='Klomin';
-let male = true;
+let gander = 'male';
 let date_birth="2001-03-01";
 class Person
 {
-    constructor(Name, Surname, Male,Date)
+    constructor(Name, Surname, gander,Date)
     {
         this.name = Name;
         this.surname = Surname;
-        this.Male = Male;
+        this.gander = gander;
         this.date_birth=Date;
     }
         surname_fiscal(Surname)
@@ -128,7 +128,7 @@ class Person
         const letter_months = { 1: "A", 2: "B", 3: "C", 4: "D", 5: "E", 6: "H", 7: "L", 8: "M", 9: "P", 10: "R", 11: "S", 12: "T" }
         var code = '';
         code += date_birth[2] + date_birth[3] + letter_months[month] ;
-        if (!male)
+        if (gander=='male')
         {
             code+=date_birth[8]+date_birth[9];
         }
@@ -140,12 +140,12 @@ class Person
     }
     get_fiscal_code()
     {
-        return (this.surname_fiscal(this.surname) + this.name_fiscal(this.name) +  this.date_fiscal(this.male,this.date_birth));
+        return (this.surname_fiscal(this.surname) + this.name_fiscal(this.name) +  this.date_fiscal(this.gander,this.date_birth));
     }
 }
  function output_fiscal_code()
 {
-	let human = new Person (MyName, MySurname, male,date_birth);
+	let human = new Person (MyName, MySurname, gander,date_birth);
 	document.getElementById("fiscal_output").innerHTML = human.get_fiscal_code();
 }
 
@@ -173,11 +173,8 @@ function harshad()
 
 function Rug_function()
 {  
-var  Rug= [document.getElementById('rugInput').value];  
-  document.getElementById("fiscal_output").innerHTML =Rug[0][0];
-  //document.getElementById("fiscal_output").innerHTML = Horizontal(Rug);
-  document.getElementById('harshad_output').innerHTML = Vertical(Rug);
-
+var  str= document.getElementById('rugInput').value;  
+var Rug=str.split(',')
   if (Horizontal(Rug) && Vertical(Rug))
     document.getElementById('rugRes').innerHTML = "perfect rug";
   else {
