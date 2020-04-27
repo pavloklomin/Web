@@ -1,0 +1,52 @@
+
+nav
+{
+	width: 960px;
+	margin: 0px auto;
+
+}
+nav:before{
+	content: '';
+	display: block;
+	height: 50px;
+	width: 100%;
+	background: rgb(12, 34, 94);
+	position: absolute;
+	z-index: -1;
+
+}
+nav ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	height: 50px;
+}
+nav ul li
+{
+	float: left;
+}
+nav ul li a
+{
+	color: #fff;
+	display: block;
+	height: 50px;	
+	padding: 0 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+nav ul li a:hover
+{
+	background:#d34d43;
+}
+
+
+a{
+	color: #4ca8ed;
+	text-decoration: none;
+}
+#loader{
+    margin: auto;
+    width: 600px;
+}

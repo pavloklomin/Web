@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: rgb(31, 110, 141);
+}
+a{
+	color: #4ca8ed;
+	text-decoration: none;
+}
+
+.button-menu{
+	background: #eee;
+	outline: 2px solid #bdddf4; 
+	outline-offset: -2px;
+
+	margin-top: 20px;
+	padding: 15px;
+
+	text-align: center;
+	font-size: 200%;
+}
+.button-menu:hover{   	/*	Анимация наведения	*/
+	background-color: #fff;
+	color: #000;  
+}
+
+
